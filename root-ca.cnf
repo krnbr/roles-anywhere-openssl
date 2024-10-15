@@ -1,0 +1,17 @@
+[ req ]
+distinguished_name  = req_distinguished_name
+x509_extensions     = ca_ext
+prompt              = no
+
+[ req_distinguished_name ]
+C = AU
+ST = VICTORIA
+L = Melbourne
+O = Telstra Limited(Telstra Cloud Days)
+OU = Telstra Engineering
+CN = Roles Anywhere Trust CA
+
+[ ca_ext ]
+basicConstraints        = critical,CA:true
+keyUsage                = critical,keyCertSign
+subjectKeyIdentifier    = hash
