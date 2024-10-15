@@ -1,0 +1,18 @@
+[ req ]
+distinguished_name = client_cert
+req_extensions = v3_req
+prompt = no
+[ client_cert ]
+C = AU
+ST = VICTORIA
+L = Melbourne
+O = Telstra Limited
+OU = Telstra Cloud Days
+CN = client_cert
+[ v3_req ]
+basicConstraints        = critical, CA:FALSE
+subjectKeyIdentifier    = hash
+keyUsage                = critical, nonRepudiation, digitalSignature, keyEncipherment
+extendedKeyUsage        = critical, clientAuth
+[ v3_ca ]
+basicConstraints = critical,CA:FALSE
